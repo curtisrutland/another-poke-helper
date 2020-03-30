@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { findType } from '../lib/types'
 import TypeHelperCard from './TypeHelperCard'
+import { AttackerCard, DefenderCard } from './TypeRelationshipCard'
 import TypePickerDialog from './TypePickerDialog'
 import PokemonFinderDialog from '../Pokemon/PokemonFinderDialog'
+import MoveFinderDialog from '../Pokemon/MoveFinderDialog'
 
 export default function TypeHelper() {
   const [defendingType1, setDefendingType1] = useState(null)
@@ -10,6 +12,7 @@ export default function TypeHelper() {
   const [attackingType, setAttackingType] = useState(null)
   const [typeDialogOpen, setTypeDialogOpen] = useState(false)
   const [pokemonDialogOpen, setPokemonDialogOpen] = useState(false)
+  const [moveDialogOpen, setMoveDialogOpen] = useState(false)
   const [dialogTarget, setDialogTarget] = useState(null)
   const [hidden, setHidden] = useState([])
 
@@ -50,14 +53,21 @@ export default function TypeHelper() {
   function handlePokemonSelection(pokemon) {
     const [t1, t2] = pokemon.types
     setDefendingType1(findType(t1))
-    if(t2)
-      setDefendingType2(findType(t2))
-    else
-      setDefendingType2(null)
+    if (t2) setDefendingType2(findType(t2))
+    else setDefendingType2(null)
+  }
+
+  function handleMoveSelection(move) {
+    const type = findType(move.type)
+    setAttackingType(type)
   }
 
   function handleSelectPokemonClick() {
     setPokemonDialogOpen(true)
+  }
+
+  function handleSelectMoveClick() {
+    setMoveDialogOpen(true)
   }
 
   return (
@@ -70,7 +80,11 @@ export default function TypeHelper() {
         attackingType={attackingType}
         onSetAttackingType={handleSetAttackingTypeClick}
         onSelectPokemonClick={handleSelectPokemonClick}
+        onSelectMoveClick={handleSelectMoveClick}
       />
+      {defendingType1 && <DefenderCard type={defendingType1} />}
+      {defendingType2 && <DefenderCard type={defendingType2} />}
+      {attackingType && <AttackerCard type={attackingType} />}
       <TypePickerDialog
         open={typeDialogOpen}
         disabled={hidden}
@@ -81,6 +95,11 @@ export default function TypeHelper() {
         open={pokemonDialogOpen}
         onClose={_ => setPokemonDialogOpen(false)}
         onResult={handlePokemonSelection}
+      />
+      <MoveFinderDialog
+        open={moveDialogOpen}
+        onClose={_ => setMoveDialogOpen(false)}
+        onResult={handleMoveSelection}
       />
     </>
   )

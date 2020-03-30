@@ -48,6 +48,7 @@ export default function TypeHelperCard({
   onSetDefendingType2Click,
   onSetAttackingType,
   onSelectPokemonClick,
+  onSelectMoveClick,
 }) {
   const classes = useStyles()
   return (
@@ -93,7 +94,9 @@ export default function TypeHelperCard({
             <TableCell className={classes.bold} component="th">
               Attacking Move
             </TableCell>
-            <TableCell align="right"></TableCell>
+            <TableCell align="right">
+              <PokemonButton label="Choose Move" onClick={onSelectMoveClick} />
+            </TableCell>
           </TableRow>
           <TableRow>
             <TableCell className={classes.padLeft} component="th">

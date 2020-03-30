@@ -18,3 +18,18 @@ export async function getPokemon(name) {
   }
   return data
 }
+
+export async function getMove(name) {
+  name = name.toLowerCase().replace(/\s/, '-')
+  const key = `m/${name}`
+  let data = localStorage.getItem(key)
+  if (data == null) {
+    const res = await pokeapi.get(`move/${name}`)
+    if (res == null) return null
+    data = { name: res.name, id: res.id, type: res.type.name }
+    localStorage.setItem(key, JSON.stringify(data))
+  } else {
+    data = JSON.parse(data)
+  }
+  return data
+}
