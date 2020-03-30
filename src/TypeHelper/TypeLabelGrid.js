@@ -6,7 +6,6 @@ const sizes = {
   xs: 4,
   sm: 3,
   md: 2,
-  lg: 1,
 }
 
 export default function TypeLabelGrid({ types = [] }) {
