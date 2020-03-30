@@ -1,0 +1,505 @@
+{
+  "types": [
+    {
+      "id": 1,
+      "name": "Normal",
+      "color": "#A8A878",
+      "textColor": "#000",
+      "doubleDamageFrom": [{ "name": "Fighting", "id": 2, "color": "#C03028" }],
+      "doubleDamageTo": [],
+      "halfDamageFrom": [],
+      "halfDamageTo": [
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" }
+      ],
+      "noDamageFrom": [{ "name": "Ghost", "id": 8, "color": "#705898" }],
+      "noDamageTo": [{ "name": "Ghost", "id": 8, "color": "#705898" }]
+    },
+    {
+      "id": 2,
+      "name": "Fighting",
+      "color": "#C03028",
+      "textColor": "#FFF",
+      "doubleDamageFrom": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Normal", "id": 1, "color": "#A8A878" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "halfDamageTo": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": [{ "name": "Ghost", "id": 8, "color": "#705898" }]
+    },
+    {
+      "id": 3,
+      "name": "Flying",
+      "color": "#A890F0",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Grass", "id": 12, "color": "#78C850" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Grass", "id": 12, "color": "#78C850" }
+      ],
+      "halfDamageTo": [
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "noDamageFrom": [{ "name": "Ground", "id": 5, "color": "#E0C068" }],
+      "noDamageTo": []
+    },
+    {
+      "id": 4,
+      "name": "Poison",
+      "color": "#A040A0",
+      "textColor": "#FFF",
+      "doubleDamageFrom": [
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "halfDamageTo": [
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Ghost", "id": 8, "color": "#705898" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": [{ "name": "Steel", "id": 9, "color": "#B8B8D0" }]
+    },
+    {
+      "id": 5,
+      "name": "Ground",
+      "color": "#E0C068",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" }
+      ],
+      "halfDamageTo": [
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Grass", "id": 12, "color": "#78C850" }
+      ],
+      "noDamageFrom": [{ "name": "Electric", "id": 13, "color": "#F8D030" }],
+      "noDamageTo": [{ "name": "Flying", "id": 3, "color": "#A890F0" }]
+    },
+    {
+      "id": 6,
+      "name": "Rock",
+      "color": "#B8A038",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Normal", "id": 1, "color": "#A8A878" },
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" }
+      ],
+      "halfDamageTo": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": []
+    },
+    {
+      "id": 7,
+      "name": "Bug",
+      "color": "#A8B820",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Fire", "id": 10, "color": "#F08030" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Grass", "id": 12, "color": "#78C850" }
+      ],
+      "halfDamageTo": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Ghost", "id": 8, "color": "#705898" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": []
+    },
+    {
+      "id": 8,
+      "name": "Ghost",
+      "color": "#705898",
+      "textColor": "#FFF",
+      "doubleDamageFrom": [
+        { "name": "Ghost", "id": 8, "color": "#705898" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Ghost", "id": 8, "color": "#705898" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" }
+      ],
+      "halfDamageTo": [{ "name": "Dark", "id": 17, "color": "#705848" }],
+      "noDamageFrom": [
+        { "name": "Normal", "id": 1, "color": "#A8A878" },
+        { "name": "Fighting", "id": 2, "color": "#C03028" }
+      ],
+      "noDamageTo": [{ "name": "Normal", "id": 1, "color": "#A8A878" }]
+    },
+    {
+      "id": 9,
+      "name": "Steel",
+      "color": "#B8B8D0",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Fire", "id": 10, "color": "#F08030" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Normal", "id": 1, "color": "#A8A878" },
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "halfDamageTo": [
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "noDamageFrom": [{ "name": "Poison", "id": 4, "color": "#A040A0" }],
+      "noDamageTo": []
+    },
+    {
+      "id": 10,
+      "name": "Fire",
+      "color": "#F08030",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Water", "id": 11, "color": "#6890F0" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "halfDamageTo": [
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": []
+    },
+    {
+      "id": 11,
+      "name": "Water",
+      "color": "#6890F0",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Fire", "id": 10, "color": "#F08030" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "halfDamageTo": [
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": []
+    },
+    {
+      "id": 12,
+      "name": "Grass",
+      "color": "#78C850",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Water", "id": 11, "color": "#6890F0" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "halfDamageTo": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": []
+    },
+    {
+      "id": 13,
+      "name": "Electric",
+      "color": "#F8D030",
+      "textColor": "#000",
+      "doubleDamageFrom": [{ "name": "Ground", "id": 5, "color": "#E0C068" }],
+      "doubleDamageTo": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Water", "id": 11, "color": "#6890F0" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "halfDamageTo": [
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": [{ "name": "Ground", "id": 5, "color": "#E0C068" }]
+    },
+    {
+      "id": 14,
+      "name": "Psychic",
+      "color": "#F85888",
+      "textColor": "#FFF",
+      "doubleDamageFrom": [
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Ghost", "id": 8, "color": "#705898" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Poison", "id": 4, "color": "#A040A0" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" }
+      ],
+      "halfDamageTo": [
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": [{ "name": "Dark", "id": 17, "color": "#705848" }]
+    },
+    {
+      "id": 15,
+      "name": "Ice",
+      "color": "#98D8D8",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Rock", "id": 6, "color": "#B8A038" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Flying", "id": 3, "color": "#A890F0" },
+        { "name": "Ground", "id": 5, "color": "#E0C068" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" }
+      ],
+      "halfDamageFrom": [{ "name": "Ice", "id": 15, "color": "#98D8D8" }],
+      "halfDamageTo": [
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Ice", "id": 15, "color": "#98D8D8" }
+      ],
+      "noDamageFrom": [],
+      "noDamageTo": []
+    },
+    {
+      "id": 16,
+      "name": "Dragon",
+      "color": "#7038F8",
+      "textColor": "#FFF",
+      "doubleDamageFrom": [
+        { "name": "Ice", "id": 15, "color": "#98D8D8" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "doubleDamageTo": [{ "name": "Dragon", "id": 16, "color": "#7038F8" }],
+      "halfDamageFrom": [
+        { "name": "Fire", "id": 10, "color": "#F08030" },
+        { "name": "Water", "id": 11, "color": "#6890F0" },
+        { "name": "Grass", "id": 12, "color": "#78C850" },
+        { "name": "Electric", "id": 13, "color": "#F8D030" }
+      ],
+      "halfDamageTo": [{ "name": "Steel", "id": 9, "color": "#B8B8D0" }],
+      "noDamageFrom": [],
+      "noDamageTo": [{ "name": "Fairy", "id": 18, "color": "#EE99AC" }]
+    },
+    {
+      "id": 17,
+      "name": "Dark",
+      "color": "#705848",
+      "textColor": "#FFF",
+      "doubleDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Ghost", "id": 8, "color": "#705898" },
+        { "name": "Psychic", "id": 14, "color": "#F85888" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Ghost", "id": 8, "color": "#705898" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "halfDamageTo": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Dark", "id": 17, "color": "#705848" },
+        { "name": "Fairy", "id": 18, "color": "#EE99AC" }
+      ],
+      "noDamageFrom": [{ "name": "Psychic", "id": 14, "color": "#F85888" }],
+      "noDamageTo": []
+    },
+    {
+      "id": 18,
+      "name": "Fairy",
+      "color": "#EE99AC",
+      "textColor": "#000",
+      "doubleDamageFrom": [
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" }
+      ],
+      "doubleDamageTo": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Dragon", "id": 16, "color": "#7038F8" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "halfDamageFrom": [
+        { "name": "Fighting", "id": 2, "color": "#C03028" },
+        { "name": "Bug", "id": 7, "color": "#A8B820" },
+        { "name": "Dark", "id": 17, "color": "#705848" }
+      ],
+      "halfDamageTo": [
+        { "name": "Poison", "id": 4, "color": "#A040A0" },
+        { "name": "Steel", "id": 9, "color": "#B8B8D0" },
+        { "name": "Fire", "id": 10, "color": "#F08030" }
+      ],
+      "noDamageFrom": [{ "name": "Dragon", "id": 16, "color": "#7038F8" }],
+      "noDamageTo": []
+    }
+  ]
+}
