@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { getPokemon } from '../lib/pokemon'
 import Dialog from '@material-ui/core/Dialog'
 import DialogContent from '@material-ui/core/DialogContent'
 import Button from '@material-ui/core/Button'
@@ -10,21 +9,16 @@ import TextField from '@material-ui/core/TextField'
 export default function PokemonFinderDialog({
   open,
   onClose,
-  onResult,
   label,
   title,
+  error,
+  onSearch,
 }) {
   const [text, setText] = useState('')
-  const [error, setError] = useState('')
 
   async function search(e) {
     e.preventDefault()
-    const pokemon = await getPokemon(text)
-    if (!pokemon) setError("Can't find that pokémon!")
-    else {
-      onResult(pokemon)
-      onClose()
-    }
+    onSearch(text)
   }
 
   return (

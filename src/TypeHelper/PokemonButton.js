@@ -7,11 +7,10 @@ const useStyles = makeStyles({
   link: {
     fontSize: '.55rem',
   },
-  button: {
-  },
+  button: {},
 })
 
-export default function PokemonLink({ onClick }) {
+export default function PokemonButton({ onClick, label = 'Choose Pokémon' }) {
   const classes = useStyles()
   return (
     <Button
@@ -20,7 +19,7 @@ export default function PokemonLink({ onClick }) {
       onClick={onClick}
       className={classes.button}
     >
-      <Typography className={classes.link}>Choose Pokémon</Typography>
+      <Typography className={classes.link}>{label}</Typography>
     </Button>
   )
 }

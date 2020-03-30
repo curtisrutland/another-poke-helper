@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
-import { getPokemon } from '../lib/pokemon'
+import { getMove } from '../lib/pokemon'
 import SearchDialog from '../components/SearchDialog'
 
-export default function PokemonFinderDialog({ onResult, open, onClose }) {
+export default function MoveFinderDialog({ onResult, open, onClose }) {
   const [error, setError] = useState('')
 
   async function handleSearch(text) {
-    const pokemon = await getPokemon(text)
-    if (!pokemon) setError("Can't find that pokémon!")
+    const move = await getMove(text)
+    if (!move) setError("Can't find that move!")
     else {
-      onResult(pokemon)
+      onResult(move)
       onClose()
     }
   }
@@ -19,7 +19,7 @@ export default function PokemonFinderDialog({ onResult, open, onClose }) {
       open={open}
       onClose={onClose}
       onResult={onResult}
-      label="Pokémon Name"
+      label="Move Name"
       title="Find a Pokémon"
       error={error}
       onSearch={handleSearch}
