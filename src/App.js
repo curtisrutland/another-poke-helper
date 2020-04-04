@@ -1,10 +1,7 @@
 import React from 'react'
 import Theme from './theme'
-import AppContainer from './components/AppContainer'
-import TypeHelper from './TypeHelper/'
-import { getPokemon} from './lib/pokemon'
-
-window.getPokemon = getPokemon 
+import AppContainer from './layout/AppContainer'
+import TypeHelper from './TypeHelper/TypeHelper'
 
 function App() {
   return (
